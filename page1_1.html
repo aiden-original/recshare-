@@ -146,9 +146,8 @@
                 Portion=Portion/MaxPortion
                 IngredienceCall.value=""
                 for (i in Ingredience){
-                    let unit= String(Ingredience[i]).replace(parseInt(Ingredience[i]),"")
-                    console.log(parseInt(Ingredience[i]), unit,Portion)
-                    IngredienceCall.value=(IngredienceCall.value)+(i+":"+(Number(parseInt(Ingredience[i]))*Portion)+unit)+"\n";
+                    let unit= String(Ingredience[i]).replace(parseFloat(Ingredience[i]),"")
+                    IngredienceCall.value=(IngredienceCall.value)+(i+":"+(Number(parseFloat(Ingredience[i]))*Portion)+unit)+"\n";
                 }
             }
         </script>
